@@ -1,0 +1,368 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+% \begin{center}
+%     {\Huge \scshape SANJEEV KUMAR}
+%     \\[-2pt]
+%     Jaipur, Rajasthan 
+%     \\[1pt]
+%     \small 
+%     \href{tel:+918302469447}{\faPhone\ +91-8302469447} ~
+% \href{mailto:mymail2005sanjeev@gmail.com}{\faEnvelope\ mymail2005sanjeev@gmail.com} ~
+% \href{https://www.linkedin.com/in/sanjeev-kumar-cse1/}{\faLinkedinSquare\ linkedin.com/in/sanjeev-kumar-cse1} ~
+% \href{https://github.com/sanjeev-kumar-cse1}{\faGithub\ github.com/sanjeev-kumar-cse1}
+
+
+% \end{center}
+% \vspace{-10pt}
+
+% \begin{center}
+%     {\Huge \scshape SANJEEV KUMAR} \\[-2pt]
+%     Jaipur, Rajasthan \\[6pt]
+
+%     \small
+%     \begin{tabular}{c}
+%         \faPhone\ +91-8302469447 \quad
+%         \faEnvelope\ mymail2005sanjeev@gmail.com \\[4pt]
+%         \faLinkedinSquare\ linkedin.com/in/sanjeev-kumar-cse1 \quad
+%         \faGithub\ github.com/sanjeev-kumar-cse1
+%     \end{tabular}
+% \end{center}
+% \vspace{-10pt}
+
+\begin{center}
+    {\Huge \scshape SANJEEV KUMAR}
+    \\[-1pt]
+    Jaipur, Rajasthan \\[3pt]
+
+    \small
+    \begin{tabular}{c}
+        \href{tel:+918302469447}{\faPhone\ +91-8302469447} \quad
+        \href{mailto:mymail2005sanjeev@gmail.com}{\faEnvelope\ mymail2005sanjeev@gmail.com} \\[3pt]
+        \href{https://www.linkedin.com/in/sanjeev-kumar-cse1}{\faLinkedinSquare\ linkedin.com/in/sanjeev-kumar-cse1} \quad
+        \href{https://github.com/sanjeev-kumar-cse1}{\faGithub\ github.com/sanjeev-kumar-cse1}
+    \end{tabular}
+\end{center}
+\vspace{-10pt}
+
+
+ %-----------SUMMARY-----------
+ \vspace{-15pt}
+
+\section{SUMMARY}
+\vspace{-3pt}
+Computer Science undergraduate with hands-on experience in AWS Cloud (EC2, S3, RDS, IAM, DynamoDB, SQS), CCNA networking (OSPF, RIP, VLAN, Subnetting), Cybersecurity (VAPT, OWASP Top 10), and Full Stack Development (React.js, Node.js, MongoDB). Proven ability to design secure, scalable, and performance-optimized systems.
+
+
+
+
+\vspace{-12pt}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+\resumeSubHeadingListStart
+\vspace{-3pt}
+
+  \resumeSubheading
+    {Arya Institute of Engineering Technology and Management}{2022 – 2026}
+    {B.Tech. - Computer Science and Engineering - \textbf{CGPA} - \textbf{8.6}}{Jaipur, Rajasthan}
+\resumeSubHeadingListEnd
+\vspace{-10pt} 
+  
+%-----------EXPERIENCE-----------
+\vspace{-9pt}
+\section{EXPERIENCE}
+\resumeSubHeadingListStart
+\vspace{-3pt}
+\resumeSubheading
+{CCNA 200-301 - Industrial Training}{Aug 2025 - Jan 2026}
+{\underline{Role - Internship}}{Jaipur, Rajasthan}
+\resumeItemListStart
+% \resumeItem{CCNA teaches networking fundamentals including routing, switching, and security.}
+% \resumeItem{Installed, configured, and troubleshooted routers and switches.}
+\resumeItem{Configured and troubleshot 10+ routers and switches using OSPF, RIP, and VLAN protocols.}
+\resumeItem{Designed and implemented multi-area OSPF topology improving routing efficiency by 30\%.}
+
+\resumeItemListEnd
+
+\vspace{-5pt}
+\resumeSubheading
+{Web-Developer Industrial Training}{Jan 2025 - Jul 2025}
+{\underline{Role - Internship}}{Jaipur, Rajasthan}
+\resumeItemListStart
+% \resumeItem{Developed responsive websites using HTML, CSS, JavaScript, and backend technologies.}
+% \resumeItem{Worked with databases and implemented full-stack features.}
+\resumeItem{Engineered 5+ responsive web applications using React.js, Node.js, and MongoDB.}
+\resumeItem{Implemented RESTful APIs and optimized backend performance, increasing application efficiency by 25\%.}
+\resumeItemListEnd
+
+\vspace{-5pt}
+\resumeSubheading
+{VAPT - Industrial Training}{Sep 2024 - Jun 2025}
+{\underline{Role - Internship}}{Jaipur, Rajasthan}
+\resumeItemListStart
+% \resumeItem{Performed vulnerability assessment and penetration testing on web applications.}
+% \resumeItem{Identified and mitigated security risks to improve system protection.}
+\resumeItem{Conducted security assessment on 8+ web applications using Burp Suite and OWASP ZAP.}
+\resumeItem{Identified SQL Injection and XSS vulnerabilities and reduced security risks by 40\%.}
+
+\resumeItemListEnd
+
+\vspace{-5pt}
+\resumeSubheading
+{Cyber Security Training}{May 2024 - Aug 2024}
+{\underline{Role - Internship}}{Jaipur, Rajasthan}
+\resumeItemListStart
+\resumeItem{Performed hands-on security testing on 5+ simulated systems using ethical hacking tools and methodologies.}
+\resumeItem{Assessed common vulnerabilities and improved defensive strategies against 10+ attack scenarios.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6pt}
+
+
+%-----------PROJECTS-----------
+
+\vspace{-16pt}
+\section{PROJECTS}
+\vspace{-8pt}
+
+\resumeSubHeadingListStart
+
+%-----------Project 1-----------
+\resumeProjectHeading
+{\href{https://github.com/sanjeev-kumar-cse1/CCNA-Basic-Labs}{\textbf{\large{\underline{OSPF Connection - CCNA}}}} \href{https://github.com/sanjeev-kumar-cse1/CCNA-Basic-Labs}{\raisebox{-0.1\height}\faExternalLink} $|$ \large{\underline{OSPF Topology, Routers, Switches, PCs}}}{Nov 2025}
+\resumeItemListStart
+\resumeItem{\normalsize{Connected three routers using OSPF with 8 networks for seamless internal communication.}}
+\resumeItem{\normalsize{Executed a multi-area OSPF design (Area 0, 1, 2) reducing convergence time and improving routing stability.}}
+\resumeItemListEnd
+\vspace{-18pt}
+
+%-----------Project 2-----------
+\resumeProjectHeading
+{\href{https://github.com/sanjeev-kumar-cse1/Password-Manager_MonGo-DB.git}{\textbf{\large{\underline{Password-Manager Mongo-DB}}}} \href{https://github.com/sanjeev-kumar-cse1/Password-Manager_MonGo-DB.git}{\raisebox{-0.1\height}\faExternalLink} $|$ \large{\underline{React, MongoDB, Postman, Automation-Icons}}}{May 2025}
+\resumeItemListStart
+% \resumeItem{\normalsize{The Password Manager stores the website URL, username, and masked password in a list.}}
+% \resumeItem{\normalsize{Each entry has a Delete action that asks for confirmation before removing the data.}}
+\resumeItem{Built a secure password manager using React.js and MongoDB with CRUD functionality and API integration.}
+\resumeItem{Applied authentication and AES/RSA encryption mechanisms to strengthen data protection.}
+
+\resumeItemListEnd
+\vspace{-18pt}
+
+%-----------Project 3-----------
+\resumeProjectHeading
+{\href{https://github.com/sanjeev-kumar-cse1/PassWord-Strength-Checker}{\textbf{\large{\underline{Pass Word - Strength-Checker}}}} \href{https://github.com/sanjeev-kumar-cse1/PassWord-Strength-Checker}{\raisebox{-0.1\height}\faExternalLink} $|$ \large{\underline{Password hashing function}}}{Jan 2025}
+\resumeItemListStart
+\resumeItem{\normalsize{Evaluates password strength based on length, character complexity, and uniqueness.}}
+\resumeItem{\normalsize{Detects weak, common, or compromised passwords to help prevent security breaches.}}
+\resumeItemListEnd
+\vspace{-18pt}
+
+%-----------Project 4-----------
+\resumeProjectHeading
+{\href{https://github.com/sanjeev-kumar-cse1/Decryption-to-Eryption-Text-}{\textbf{\large{\underline{Text-Encryption}}}} \href{https://github.com/sanjeev-kumar-cse1/Decryption-to-Eryption-Text-}{\raisebox{-0.1\height}\faExternalLink} $|$ \large{\underline{AES, RSA, or DES with Python, Java, JavaScript, or OpenSSL}}}{Aug 2024}
+\resumeItemListStart
+\resumeItem{\normalsize{Developed encryption tool converting plaintext to ciphertext using AES and RSA algorithms.}}
+\resumeItem{\normalsize{Integrated secure hashing mechanisms (SHA) to ensure data integrity and confidentiality.}}
+\resumeItemListEnd
+\vspace{-18pt}
+
+\resumeSubHeadingListEnd
+
+          
+      
+          
+
+%-----------TECHNICAL SKILLS-----------
+\vspace{-4pt}
+
+% \section{TECHNICAL SKILLS}    
+% \vspace{-3pt}
+
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{\normalsize{}}{\normalsize{EC2, S3, RDS, IAM, CloudWatch, SNS, DynamoDB, SQS, Static-Dynamic Server Deployment, Cisco Packet Tracer, GNS3, Routing Protocols: RIP, OSPF, Static-Dynamic Routing, IP Addressing, Subnetting, DHCP , LAN/WAN, Wireless Configuration, Troubleshooting, Router, Switch,  HTML, CSS, JavaScript, Node.js, Express.js, React.js, Next.js, Tailwind CSS, JSON, Linux, Git, GitHub, VS Code, Postman, Docker, Burp Suite, OWASP ZAP, MySQL, MongoDB, SQL-Work-Bench, C, C++, Java, Python 
+
+%     }}
+%  \end{itemize}
+%  \vspace{-11pt}
+
+\section{TECHNICAL SKILLS}
+\vspace{-3pt}
+
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Cloud:} AWS (EC2, S3, RDS, IAM, DynamoDB, SQS, CloudWatch, SNS) $|$
+\textbf{Networking:} OSPF, RIP, VLAN, Subnetting, DHCP, TCP/IP, Wireless, Troubleshooting  $|$
+\textbf{Security:} VAPT, Burp Suite, OWASP ZAP $|$
+\textbf{Web:} React.js, Node.js, Express.js, HTML, CSS, JavaScript $|$
+\textbf{Database:} MySQL, MongoDB $|$
+\textbf{Programming:} C, C++, Java, Python $|$
+\textbf{Tools:} Git, Docker, Linux, Postman
+}}
+\end{itemize}
+
+
+% %-----------SOFT SKILLS-----------
+%     \vspace{-15pt}
+
+% \section{SOFT SKILLS}
+%     \vspace{-3pt}
+
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{\normalsize{}}{\normalsize{Good Learner, Problem-Solving, Teamwork-Independent Working, Good Communication Skills }} \\
+%     }}
+%  \end{itemize}
+%  \vspace{-12pt}
+
+
+
+ 
+  %-----------CERTIFICATIONS---------------
+    \vspace{-24pt}
+
+\section{CERTIFICATIONS}
+    \vspace{-5pt}
+
+
+\begin{center}
+\small
+\begin{tabular}{{0.24\textwidth} {0.22 \textwidth} {0.23 \textwidth} {0.23 \textwidth}}
+\textbf{$\bullet$ \href{https://www.mindluster.com/student/certificate/af19bb6e}{CCNA 200-301 – Mind Luster}} &
+\textbf{\hspace{0.9em}$\bullet$\href{https://drive.google.com/file/d/1537PR634xf1d5l3hXkvwUc9NoVbsr2ll/view?usp=sharing}{Web Development – Regex}} &
+\textbf{$\bullet$ \href{https://drive.google.com/file/d/1RQRVTlKTpWKs1skxj9oFCcpKLDStKOoL/view?usp=sharing}{VAPT – Defronix}} &
+
+\textbf{$\bullet$ \href{https://www.mindluster.com/student/certificate/10768091294}{C – Mind Luster}}
+
+
+\\[1pt]
+
+\textbf$\bullet$  \href{https://drive.google.com/file/d/1Y1bSTzz97bqqgy004BJQUIR2iUceD8zZ/view?usp=sharing}{Cyber-Security – Defronix}}  &
+\textbf{$\bullet$ \href{https://www.mindluster.com/student/certificate/10768093985}{Java – Mind Luster}} &
+\textbf{$\bullet$ \href{https://www.mindluster.com/student/certificate/10768096635}{Python – Mind Luster}} &
+~ % empty cell to fill 4th column
+\end{tabular}
+\end{center}
+
+\end{document}
